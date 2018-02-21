@@ -38,12 +38,22 @@ class Card extends React.Component {
       <p className="Card-rating">{this.state.rating}</p>
       <right><h4>{this.state.author}</h4></right>
 
-            </div>);
+    </div>);
   }
 }
 Card.defaultProps = {
+
+
 };
 Card.propTypes = {
+  value: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.shape({
+    bookname: PropTypes.string,
+    author: PropTypes.string,
+    bookid: PropTypes.number,
+    likestatus: PropTypes.string,
+    rating: PropTypes.number,
+
+  }))).isRequired,
 };
 
 // const mapDispatchToProps = dispatch => ({

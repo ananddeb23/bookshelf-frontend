@@ -31,8 +31,9 @@ class ContentCase extends React.Component {
       </div>);
   }
 }
-ContentCase.defaultProps = {
-};
+
 ContentCase.propTypes = {
+  contentToDisplay: PropTypes.object,
+  author: PropTypes.string,
 };
 export default ContentCase;
