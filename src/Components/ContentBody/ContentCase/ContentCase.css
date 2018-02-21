@@ -2,19 +2,23 @@
   width: 100vh;
    display: flex;
    flex-direction: column;
-  
-   
+  justify-content: space-between;
+   align-items: stretch;
 
 
 }
 .ContentCase-header {
-   
+  font-family: "Helvetica Neue",
+  Helvetica,
+  Arial,
+  sans-serif;
+  margin-left: 10%;
     
 }
 .ContentCase-body {
     width: 100vh;
     display: flex;
     flex-direction: row;
-
+align-items: stretch;
    background-color : #E8834D;
 }
