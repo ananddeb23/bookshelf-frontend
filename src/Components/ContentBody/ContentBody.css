@@ -3,8 +3,10 @@
     flex-direction: column;
       justify-content: space-around;
     flex-grow: 1;
-   
+   width: 100vw;
+   margin-left: 60px;
     height:100vh;
+    overflow-y: auto;
 }
 .ContentBody-noContent{
 width: 40%;
