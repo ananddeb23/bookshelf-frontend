@@ -12,19 +12,23 @@ class ContentCase extends React.Component {
   }
   render() {
     const display = [];
+    const nextline = <br />;
     const arr = this.state.data;
     for (let i = 0; i < arr.length; i++) {
       const card = <Card value={arr[i]} />;
       console.log('card', card);
       display.push(card);
     }
-    return (<div className="ContentCase-outer">
-      <div className="ContentCase-header"> <h1>{this.props.author}</h1></div>
-      <div className="ContentCase-body" >
-        {display}
+    return (
+      <div className="ContentCase-outer">
+        <div className="ContentCase-header"> <h1>{this.props.author}</h1></div>
+        <br />
+        <div className="ContentCase-body" >
+          {display}
 
-      </div>
-    </div>);
+        </div>
+        <br />
+      </div>);
   }
 }
 ContentCase.defaultProps = {

@@ -30,14 +30,15 @@ class Card extends React.Component {
   }
   render() {
     return (<div className="Card-outer">
-      <img src="https://images-na.ssl-images-amazon.com/images/I/51VNlzbfpXL._SX331_BO1,204,203,200_.jpg" width="120px" height="40px" />
-      <h4 onClick={this.handleupdate}>{this.state.likeStatus}</h4>
-      <h4>{this.state.bookid}</h4>
-      <h4>{this.state.bookname}</h4>
-      <h4>{this.state.rating}</h4>
-      <h4>{this.state.author}</h4>
+      <div>  <img src="https://images-na.ssl-images-amazon.com/images/I/51VNlzbfpXL._SX331_BO1,204,203,200_.jpg" width="120px" height="40px" />
+      </div>
+      <button className={this.state.likeStatus} onClick={this.handleupdate}> <i className="material-icons">favorite</i> </button>
 
-    </div>);
+      <h4>{this.state.bookname}</h4>
+      <p className="Card-rating">{this.state.rating}</p>
+      <right><h4>{this.state.author}</h4></right>
+
+            </div>);
   }
 }
 Card.defaultProps = {

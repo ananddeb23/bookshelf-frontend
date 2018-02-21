@@ -1,9 +1,7 @@
 .ContentCase-outer{
-  width: 100vh;
-   display: flex;
-   flex-direction: column;
-  justify-content: space-between;
-   align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
 
 
 }
@@ -13,12 +11,13 @@
   Arial,
   sans-serif;
   margin-left: 10%;
+  margin-bottom: 5%;
     
 }
 .ContentCase-body {
     width: 100vh;
     display: flex;
     flex-direction: row;
-align-items: stretch;
-   background-color : #E8834D;
+padding: 20%;
+   
 }

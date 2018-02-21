@@ -70,7 +70,7 @@ class ContentBody extends React.Component {
     return (
       <div className="ContentBody-layout">
 
-        <div><h1>Page 2</h1>
+        <div>
           {displaycontent}
         </div>
 
