@@ -1,0 +1,15 @@
+.Sidebar-black{
+    display: flex;
+    flex-direction: column;
+      justify-content: space-between;
+    position:fixed;
+    left: 0px;
+    background-color: #303A47;
+    width:60px;
+    height: 100vh;
+    font-family: "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    color: white;
+}

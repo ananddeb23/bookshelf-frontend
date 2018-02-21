@@ -1,0 +1,26 @@
+.ContentBody-layout {
+    display: flex;
+    flex-direction: column;
+      justify-content: space-around;
+    flex-grow: 1;
+   
+    height:100vh;
+}
+.ContentBody-noContent{
+width: 40%;
+height: 40%;
+position: absolute;
+left: 50%;
+top: 50%;
+padding: 10%;
+ background-color: #E8834D;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+border: 0.5px solid black;
+border-radius: 5px;
+
+
+}
+.material-icons{
+    color: white;
+}
