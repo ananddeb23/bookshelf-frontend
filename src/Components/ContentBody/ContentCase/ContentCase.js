@@ -21,8 +21,8 @@ class ContentCase extends React.Component {
     }
     return (
       <div className="ContentCase-outer">
-        <div className="ContentCase-header"> <h1>{this.props.author}</h1></div>
-        <br />
+        <div className="ContentCase-header"> <p>{this.props.author}</p></div>
+
         <div className="ContentCase-body" >
           {display}
 

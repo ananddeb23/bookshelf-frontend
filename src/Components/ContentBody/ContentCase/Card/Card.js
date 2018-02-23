@@ -30,15 +30,16 @@ class Card extends React.Component {
   }
   render() {
     return (<div className="Card-outer">
-      <div>  <img src="https://images-na.ssl-images-amazon.com/images/I/51VNlzbfpXL._SX331_BO1,204,203,200_.jpg" width="120px" height="40px" />
+      <div className="Card-img-container">  <img className="Card-image" src="https://therabbitfilm.files.wordpress.com/2012/09/hp3.jpg" width="251px" height="210px" z-index="-1" />
+        </div>
+      <div className="Card-button">
+        <button className={this.state.likeStatus} onClick={this.handleupdate}> <i className="material-icons">favorite</i> </button>
       </div>
-      <button className={this.state.likeStatus} onClick={this.handleupdate}> <i className="material-icons">favorite</i> </button>
-
-      <h4>{this.state.bookname}</h4>
+      <h5 className="Card-text-align">{this.state.bookname}</h5>
       <p className="Card-rating">{this.state.rating}</p>
-      <right><h4>{this.state.author}</h4></right>
+      <h4 className="Card-text-author">{this.state.author.toUpperCase()}</h4>
 
-    </div>);
+            </div>);
   }
 }
 Card.defaultProps = {

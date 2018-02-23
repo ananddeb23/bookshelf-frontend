@@ -69,7 +69,19 @@ class ContentBody extends React.Component {
     }
     return (
       <div className="ContentBody-layout">
+        <div className="Content-Body-redbanner">
+          <div className="Content-Body-redbanner-text">
+            <p className="Content-Body-redbanner-smalltext-Left">
+                 The
+            </p>
+            <p className="Content-Body-redbanner-bigtext"> Book </p>
+            <p className="Content-Body-redbanner-smalltext-Right">Shelf </p>
+          </div>
+          <div className="Content-Body-redbanner-underline">
+            <p> ________________ </p>
+          </div>
 
+        </div>
         <div>
           {displaycontent}
         </div>

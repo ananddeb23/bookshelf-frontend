@@ -1,23 +1,30 @@
 .ContentCase-outer{
   display: flex;
   flex-direction: column;
-  height: 50vh;
+ 
 
 
 }
 .ContentCase-header {
   font-family: "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+  Helvetica;
   margin-left: 10%;
-  margin-bottom: 5%;
+  font-size: 20px;
+  color: Grey;
+  
+  
     
 }
+@media (max-width: 500px) {
+    .ContentCase-header {
+        margin-left: 15.5%;
+    }
+}
 .ContentCase-body {
-    width: 100vh;
-    display: flex;
-    flex-direction: row;
-padding: 20%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+padding: 10%;
+background-color: #E8834D;
    
 }

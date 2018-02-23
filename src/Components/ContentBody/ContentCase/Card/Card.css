@@ -1,47 +1,80 @@
 .Card-outer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  
-   background-color: white;
-   
-    height: 100%;
-    width: 100%;
-   margin: 10px;
-    
-    padding: 10%;
+    width: 250px;
+    margin: 40px;
     background-color: white;
-   
-    border: 0.5px solid black;
-    border-radius: 5px;
+   align-items: space-between;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
     box-shadow: 10px #888888;
+     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+     transition: 0.3s;
+}
+.Card-image{
+    border-radius: 10px;
+    margin: none;
+    
+
+}
+.Card-button{
+   
+    margin-top: -20px;
+     margin-left: 200px;
+    position: absolute;
+   
+    z-index: 5;
+}
+.Card-img-container{
+
 }
 .like{
+     margin-right: 10%;
+    margin-top: -10%;
+    z-index: 2;
     display: block;
     border-radius: 100%;
     width: 40px;
     height: 40px;
     color: white;
     background: red;
+    border:none;
+}
+.Card-text-align {
+    margin: 10%;
+}
+.Card-text-author{
+   margin-left: 120px;
 }
 .dislike {
+    margin-right: 10%;
+    margin-top: -10%;
+    z-index: 2;
+    float :right;
      display: block;
      border-radius: 100%;
      width: 40px;
      height: 40px;
      color: white;
-     background: black;
+     background: grey;
+       border:none;
 }
 .unallocated{
+    float :right;
+    margin-right: 10%;
+    margin-top: -10%;
+     z-index: 2;
   display: block;
+  
   border-radius: 100%;
   width: 40px;
   height: 40px;
   color: white;
-  background: black;
+  background: grey;
+    border:none;
     
 }
 .Card-rating{
-    font-size: 40px;
+    font-size: 32px;
     color: grey;
+    margin-top: -10px;
+    margin-left: 10%;
 }
